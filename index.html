@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>郭一铭 | 智能交互设计个人博客</title>
+  <meta name="description" content="郭一铭的个人博客与作品集，聚焦智能交互设计、产品原型、视觉设计、3D建模与电子硬件原型。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="networkCanvas" aria-hidden="true"></canvas>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="回到首页">
+      <span class="brand-mark">GYM</span>
+      <span>
+        <strong>郭一铭</strong>
+        <small>Interaction Designer</small>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#profile">简介</a>
+      <a href="#skills">技能</a>
+      <a href="#projects">项目</a>
+      <a href="#blog">博客</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <button class="menu-button" type="button" aria-label="展开导航" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Tianjin Renai College / Intelligent Interaction Design</p>
+        <h1>把交互原型、视觉表达与硬件思维连接成可落地的产品体验。</h1>
+        <p class="hero-lead">我是郭一铭，就读于天津仁爱学院智能交互设计专业。熟练使用 Axure、Photoshop、Rhino、嘉立创 EDA，并持续拓展产品策略、AIGC 辅助设计、前端表达、用户研究与智能硬件原型能力。</p>
+        <div class="hero-actions">
+          <a class="primary-action" href="#projects">查看作品</a>
+          <a class="secondary-action" href="#contact">预约合作</a>
+        </div>
+        <div class="hero-stats" aria-label="能力概览">
+          <span><strong>4+</strong>核心软件</span>
+          <span><strong>12</strong>技能模块</span>
+          <span><strong>3</strong>产品方向</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/hero-lab.png" alt="科技感交互设计工作台视觉" />
+        <div class="glass-console">
+          <span>Prototype Signal</span>
+          <strong>92%</strong>
+          <em>UX / UI / EDA / 3D</em>
+        </div>
+      </div>
+    </section>
+
+    <section class="section profile" id="profile">
+      <div class="section-heading">
+        <p class="eyebrow">Personal Positioning</p>
+        <h2>面向商业产品的复合型设计学习者</h2>
+      </div>
+      <div class="profile-grid">
+        <article>
+          <h3>我关注什么</h3>
+          <p>关注从用户需求到交互流程、从界面视觉到硬件结构的完整体验。希望把设计从“好看”推进到“能被理解、能被验证、能被交付”。</p>
+        </article>
+        <article>
+          <h3>我能做什么</h3>
+          <p>能完成高保真原型、移动端/网页界面、品牌视觉、产品建模、PCB 初步设计、展示型网站与产品方案包装。</p>
+        </article>
+        <article>
+          <h3>我想成为谁</h3>
+          <p>成为懂技术逻辑、懂用户体验、懂商业表达的智能交互设计师，在智能终端、数字产品和创新硬件方向持续成长。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skill Matrix</p>
+        <h2>技能不止是软件熟练度，而是交付能力</h2>
+      </div>
+      <div class="skill-board">
+        <div class="skill-card featured">
+          <span class="skill-icon">AX</span>
+          <h3>Axure 产品原型</h3>
+          <p>信息架构、交互流程、组件库、动态面板、表单逻辑与高保真演示。</p>
+          <div class="meter"><i style="width: 92%"></i></div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">PS</span>
+          <h3>Photoshop 视觉设计</h3>
+          <p>海报、电商主图、视觉合成、界面素材、品牌推广图。</p>
+          <div class="meter"><i style="width: 88%"></i></div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">3D</span>
+          <h3>Rhino 产品建模</h3>
+          <p>产品外观、结构表达、渲染预览、智能硬件概念建模。</p>
+          <div class="meter"><i style="width: 84%"></i></div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">PCB</span>
+          <h3>嘉立创 EDA</h3>
+          <p>原理图绘制、PCB 布局、硬件验证思路与交互装置原型。</p>
+          <div class="meter"><i style="width: 80%"></i></div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">UX</span>
+          <h3>用户体验研究</h3>
+          <p>竞品分析、用户旅程、痛点拆解、可用性测试与体验复盘。</p>
+          <div class="meter"><i style="width: 82%"></i></div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">AI</span>
+          <h3>AIGC 辅助设计</h3>
+          <p>灵感探索、图像参考、文案框架、快速方案生成与迭代。</p>
+          <div class="meter"><i style="width: 86%"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services">
+      <div class="section-heading">
+        <p class="eyebrow">Business Value</p>
+        <h2>可商业化的设计服务方向</h2>
+      </div>
+      <div class="service-strip">
+        <div>
+          <strong>01</strong>
+          <h3>App / Web 原型方案</h3>
+          <p>适合课程项目、创业展示、比赛路演与产品需求验证。</p>
+        </div>
+        <div>
+          <strong>02</strong>
+          <h3>品牌视觉与展示页</h3>
+          <p>为个人品牌、社团、产品概念制作更有记忆点的视觉表达。</p>
+        </div>
+        <div>
+          <strong>03</strong>
+          <h3>智能硬件概念原型</h3>
+          <p>结合 Rhino 与 EDA，把外观、交互和基础电路逻辑放在同一方案中。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Projects</p>
+        <h2>项目以“问题、方案、价值”来呈现</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card wide">
+          <div class="project-meta"><span>UX Prototype</span><span>Axure</span></div>
+          <h3>校园智能服务 App</h3>
+          <p>围绕校园办事、课程提醒、社团活动和设备报修，构建统一入口。重点展示用户路径、任务流、首页信息优先级与可交互原型。</p>
+          <a href="#contact">沟通此类项目</a>
+        </article>
+        <article class="project-card">
+          <div class="project-meta"><span>Industrial Design</span><span>Rhino</span></div>
+          <h3>桌面智能交互终端</h3>
+          <p>将屏幕、传感器和实体控制键结合，探索学习桌面场景下的信息提醒与情绪灯效。</p>
+        </article>
+        <article class="project-card">
+          <div class="project-meta"><span>Hardware</span><span>EDA</span></div>
+          <h3>可穿戴提醒模块</h3>
+          <p>完成基础原理图和 PCB 概念布局，用于验证震动反馈、状态灯和低功耗交互逻辑。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section blog" id="blog">
+      <div class="section-heading">
+        <p class="eyebrow">Design Notes</p>
+        <h2>博客记录方法、工具和成长</h2>
+      </div>
+      <div class="post-list">
+        <a class="post-item" href="#">
+          <span>01</span>
+          <div>
+            <h3>如何把 Axure 原型做得更像真实产品</h3>
+            <p>从组件规范、交互状态、边界场景和演示节奏四个角度拆解。</p>
+          </div>
+        </a>
+        <a class="post-item" href="#">
+          <span>02</span>
+          <div>
+            <h3>智能交互设计为什么需要一点硬件思维</h3>
+            <p>交互体验不只发生在屏幕里，也发生在传感器、反馈和物理触点中。</p>
+          </div>
+        </a>
+        <a class="post-item" href="#">
+          <span>03</span>
+          <div>
+            <h3>从 PS 视觉到商业展示：让作品更容易被理解</h3>
+            <p>用叙事结构、视觉层级和价值表达提升作品集的说服力。</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section timeline">
+      <div class="section-heading">
+        <p class="eyebrow">Roadmap</p>
+        <h2>下一阶段能力路线</h2>
+      </div>
+      <div class="timeline-line">
+        <div><span>2026</span><strong>完善作品集</strong><p>沉淀 3-5 个可讲清商业价值的项目案例。</p></div>
+        <div><span>Next</span><strong>前端表达</strong><p>学习 HTML/CSS/JavaScript，让原型进一步变成可访问页面。</p></div>
+        <div><span>Future</span><strong>智能硬件</strong><p>结合 EDA、传感器与交互设计，制作可演示的实体原型。</p></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>欢迎交流设计、项目合作和作品集建议</h2>
+        <p>可以把这里替换成你的邮箱、微信、GitHub、站酷或 Behance 链接。当前页面已预留商业合作和项目展示入口。</p>
+      </div>
+      <a class="primary-action" href="mailto:yourname@example.com">发送邮件</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 郭一铭. Intelligent Interaction Design Portfolio.</span>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
